@@ -3,7 +3,9 @@
 ## Description
 
 This is a simple quiz game that asks the user a series of questions and then gives them a score at the end. The
-questions are all true or false questions. The user can choose to play again at the end of the game.
+questions are all true or false questions.
+
+This project is also testing the use of the Github Actions CI/CD pipeline.
 
 ## Installation
 

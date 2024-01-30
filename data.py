@@ -6,6 +6,13 @@ parameters = {
     "category": 18
 }
 
-response = requests.get("https://opentdb.com/api.php", params=parameters)
-response.raise_for_status()
-question_data = response.json()["results"]
+url = "https://opentdb.com/api.php"
+
+
+def get_data():
+    response = requests.get(url, params=parameters)
+    response.raise_for_status()
+    return response.json()["results"]
+
+
+question_data = get_data()
